@@ -18,7 +18,7 @@ class camera {
             for(int j = 0; j<img_height; j++){
 
                 //progress reporting
-                std::clog << "\rScanlines Remaining: " << (img_height - 1) << ' ' << std::flush;
+                std::clog << "\rScanlines Remaining: " << (j - 1) << ' ' << std::flush;
                 for(int i = 0; i<img_width; i++){
                     auto pixel_center = pixel00_loc + (i * pixel_delta_u) + (j * pixel_delta_v);
                     auto ray_direction = pixel_center - camera_center;

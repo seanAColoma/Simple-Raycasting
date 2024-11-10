@@ -1,2 +1,4 @@
 #ignore the build folder
-build
+build/
+/CMakeLists.txt
+.vscode/
